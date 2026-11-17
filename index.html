@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QueueLess | Food Menu</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+
+<body>
+
+    <!-- Shared header -->
+    <header>
+        <div class="navigation">
+
+            <a class="logo" href="index.html">
+                Queue<span>Less.</span>
+            </a>
+
+            <nav>
+                <a class="active" href="index.html">Food Menu</a>
+                <a href="track.html">Track Order</a>
+                <a href="staff.html">Staff Dashboard</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- Welcome section -->
+        <section class="hero">
+
+            <p class="eyebrow">YOUR CAMPUS FOOD PARTNER</p>
+
+            <h1>
+                Your food. Your break.<br>
+                <span>No queue.</span>
+            </h1>
+
+            <p class="hero-description">
+                Fresh campus favourites at student-friendly prices.
+                Choose your food and enjoy a better break.
+            </p>
+
+            <a class="button" href="#menu">
+                Explore Menu ↓
+            </a>
+
+        </section>
+
+        <!-- Ordering steps -->
+        <section class="steps">
+
+            <div class="step">
+                <span>01</span>
+                Choose your food
+            </div>
+
+            <div class="step">
+                <span>02</span>
+                Review your cart
+            </div>
+
+            <div class="step">
+                <span>03</span>
+                Continue to checkout
+            </div>
+
+        </section>
+
+        <!-- Menu and cart -->
+        <div class="page-layout">
+
+            <section id="menu" class="menu-section">
+
+                <p class="eyebrow">FRESH PICKS FOR YOUR BREAK</p>
+
+                <h2>Our Food Menu</h2>
+
+                <p class="section-description">
+                    Pick something delicious from our six campus favourites.
+                </p>
+
+                <!-- Food cards are displayed by JavaScript -->
+                <div id="food-list" class="food-list"></div>
+
+            </section>
+
+            <aside class="cart-section">
+
+                <h2>Your Cart</h2>
+
+                <p id="item-count" class="item-count">
+                    0 items
+                </p>
+
+                <p class="section-description">
+                    Your next break starts here.
+                </p>
+
+                <!-- Selected items are displayed by JavaScript -->
+                <div id="cart-items"></div>
+
+                <div class="cart-total">
+
+                    <span>Total</span>
+
+                    <strong id="cart-total">
+                        Tk 0
+                    </strong>
+
+                </div>
+
+                <a
+                    id="checkout-button"
+                    class="button checkout-button"
+                    href="checkout.html"
+                    onclick="return checkCart()"
+                >
+                    Go to Checkout →
+                </a>
+
+                <p class="cart-note">
+                    Demo cart: items reset when you reload or leave this page.
+                </p>
+
+            </aside>
+
+        </div>
+
+        <section class="bottom-message">
+
+            <h3>A better break, one bite at a time.</h3>
+
+            <p>
+                Good food. Simple choices. Less waiting.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p class="footer-logo">
+            Queue<span>Less.</span>
+        </p>
+
+        <p>Campus Canteen Preorder System</p>
+
+        <p>Member 1 — Food Menu and Cart</p>
+
+    </footer>
+
+    <!-- Load the cart variable before the menu functions -->
+    <script src="js/store.js"></script>
+    <script src="js/menu.js"></script>
+
+</body>
+</html>
