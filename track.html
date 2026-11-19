@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QueueLess - Track Order</title>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/track.css">
+
+    <script src="js/store.js" defer></script>
+    <script src="js/sample.js" defer></script>
+    <script src="js/track.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <h1>QueueLess</h1>
+        <nav>
+            <a href="index.html">Menu</a>
+            <a href="checkout.html">Checkout</a>
+            <a href="track.html">Track Order</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Track Your Order</h2>
+        <label for="token-input">Order token</label>
+        <input id="token-input" type="text" placeholder="QL-001">
+        <button id="check-btn" class="button">Check Status</button>
+
+        <section id="result"></section>
+    </main>
+
+</body>
+</html>
